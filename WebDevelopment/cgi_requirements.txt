@@ -1,0 +1,10 @@
+Web	- CGI (Common Gateway Interface)
+
+ProjectFolder
+ - cgi-bin
+   - all python files will be here
+ - html files
+
+Run Server Command
+1. Open Terminal inside Project Folder
+2. Type -> python -m http.server --cgi
