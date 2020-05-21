@@ -1,7 +1,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_MainWindow(object):
+class Ui_MainWindow(QtWidgets.QMainWindow):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(1043, 697)
@@ -93,40 +93,24 @@ class Ui_MainWindow(object):
 
     def initEvents(self):
         # Event binding
-        self.pushButton.clicked.connect(self.add)
-        self.pushButton_2.clicked.connect(self.sub)
-        self.pushButton_3.clicked.connect(self.div)
-        self.pushButton_4.clicked.connect(self.mul)
+        buttons = [self.pushButton, self.pushButton_2, self.pushButton_3, self.pushButton_4]
+
+        for i in range(len(buttons)):
+            buttons[i].clicked.connect(self.calculator)
 
     def getInput(self):
-        f_num = int(self.lineEdit.text())
-        s_num = int(self.lineEdit_2.text())
+        f_num = self.lineEdit.text()
+        s_num = self.lineEdit_2.text()
         return f_num, s_num
 
-    def add(self):
+    def calculator(self):
+        btn = self.sender()
+        # print(btn.text())
+        opr = btn.text()
         f_num, s_num = self.getInput()
-        res = f_num + s_num
-        # print("Sum is",res)
+        expression = f_num + opr + s_num
+        res = eval(expression)
         self.lineEdit_3.setText(str(res))
-
-    def sub(self):
-        f_num, s_num = self.getInput()
-        res = f_num - s_num
-        # print("Sum is",res)
-        self.lineEdit_3.setText(str(res))
-
-    def div(self):
-        f_num, s_num = self.getInput()
-        res = f_num / s_num
-        # print("Sum is",res)
-        self.lineEdit_3.setText(str(res))
-
-    def mul(self):
-        f_num, s_num = self.getInput()
-        res = f_num * s_num
-        # print("Sum is",res)
-        self.lineEdit_3.setText(str(res))
-
 
 
 if __name__ == "__main__":

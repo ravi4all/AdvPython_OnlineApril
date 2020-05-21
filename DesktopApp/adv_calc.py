@@ -2,6 +2,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 
 
 class Ui_MainWindow(QtWidgets.QMainWindow):
+    expression = ""
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(1015, 742)
@@ -242,7 +243,53 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
         self.actionAdvance_Calculator.setText(_translate("MainWindow", "Advance Calculator"))
         self.actionScientific_Calculator.setText(_translate("MainWindow", "Scientific Calculator"))
 
+        self.frame.hide()
+        self.initEvents()
+        self.lineEdit_3.setReadOnly(True)
 
+    def initEvents(self):
+        self.actionAdvance_Calculator.triggered.connect(self.showAdvCalc)
+        self.actionBasic_Calculator.triggered.connect(self.showBasicCalc)
+
+        buttons = [self.pushButton_5,self.pushButton_6,self.pushButton_7,
+                   self.pushButton_8,self.pushButton_9,self.pushButton_10,
+                   self.pushButton_11,self.pushButton_12,self.pushButton_13,
+                   self.pushButton_15]
+
+        operators = [self.pushButton_17,self.pushButton_18,self.pushButton_19,
+                     self.pushButton_20]
+
+        for i in range(len(buttons)):
+            buttons[i].clicked.connect(self.appendNumbers)
+
+        for i in range(len(operators)):
+            operators[i].clicked.connect(self.appendOperators)
+
+        self.pushButton_21.clicked.connect(self.calculate)
+
+    def showBasicCalc(self):
+        self.frame.hide()
+
+    def showAdvCalc(self):
+        self.frame.show()
+
+    def appendNumbers(self):
+        btn = self.sender()
+        num = btn.text()
+        self.expression += num
+        self.lineEdit_3.setText(self.expression)
+        self.temp = self.lineEdit_3.text()
+
+    def appendOperators(self):
+        btn = self.sender()
+        opr = btn.text()
+        self.expression = self.temp + opr
+        self.lineEdit_3.setText(self.expression)
+
+
+    def calculate(self):
+        result = eval(self.expression)
+        self.lineEdit_3.setText(str(result))
 
 
 if __name__ == "__main__":
