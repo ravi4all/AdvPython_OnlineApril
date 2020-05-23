@@ -1,11 +1,3 @@
-# -*- coding: utf-8 -*-
-
-# Form implementation generated from reading ui file 'design.ui'
-#
-# Created by: PyQt5 UI code generator 5.12
-#
-# WARNING! All changes made in this file will be lost!
-
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
@@ -179,8 +171,8 @@ class Ui_MainWindow(object):
         self.pushButton_st = QtWidgets.QPushButton(self.frame_3)
         self.pushButton_st.setGeometry(QtCore.QRect(170, 500, 331, 131))
         self.pushButton_st.setStyleSheet("font: 18pt \"MS Shell Dlg 2\";\n"
-                                        "color: rgb(255, 255, 255);\n"
-                                        "background-color: rgb(85, 170, 255);")
+                                         "color: rgb(255, 255, 255);\n"
+                                         "background-color: rgb(85, 170, 255);")
         self.pushButton_st.setObjectName("pushButton_st")
 
         self.pushButton_dl = QtWidgets.QPushButton(self.frame_3)
@@ -189,7 +181,6 @@ class Ui_MainWindow(object):
                                          "color: rgb(255, 255, 255);\n"
                                          "background-color: rgb(85, 170, 255);")
         self.pushButton_dl.setObjectName("pushButton_dl")
-
 
         self.frame_4 = QtWidgets.QFrame(self.frame_3)
         self.frame_4.setGeometry(QtCore.QRect(0, 0, 1091, 671))
@@ -226,6 +217,70 @@ class Ui_MainWindow(object):
         self.pushButton_10.setGeometry(QtCore.QRect(350, 520, 331, 81))
         self.pushButton_10.setStyleSheet("font: 18pt \"MS Shell Dlg 2\";")
         self.pushButton_10.setObjectName("pushButton_10")
+        self.frame_5 = QtWidgets.QFrame(self.frame_4)
+        self.frame_5.setGeometry(QtCore.QRect(0, 0, 1081, 661))
+        self.frame_5.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_5.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_5.setObjectName("frame_5")
+        self.label_19 = QtWidgets.QLabel(self.frame_5)
+        self.label_19.setGeometry(QtCore.QRect(450, 10, 251, 41))
+        self.label_19.setStyleSheet("font: 20pt \"MS Shell Dlg 2\";")
+        self.label_19.setObjectName("label_19")
+        self.tableWidget = QtWidgets.QTableWidget(self.frame_5)
+        self.tableWidget.setGeometry(QtCore.QRect(150, 110, 771, 501))
+        self.tableWidget.setObjectName("tableWidget")
+        self.tableWidget.setColumnCount(4)
+        self.tableWidget.setRowCount(1)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setVerticalHeaderItem(0, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(0, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(1, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(2, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(3, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setItem(0, 0, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setItem(0, 1, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setItem(0, 2, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setItem(0, 3, item)
+        self.frame_6 = QtWidgets.QFrame(self.frame_5)
+        self.frame_6.setGeometry(QtCore.QRect(0, 0, 1091, 671))
+        self.frame_6.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_6.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_6.setObjectName("frame_6")
+        self.label_20 = QtWidgets.QLabel(self.frame_6)
+        self.label_20.setGeometry(QtCore.QRect(150, 150, 231, 61))
+        self.label_20.setStyleSheet("font: 16pt \"MS Shell Dlg 2\";")
+        self.label_20.setObjectName("label_20")
+        self.label_21 = QtWidgets.QLabel(self.frame_6)
+        self.label_21.setGeometry(QtCore.QRect(150, 250, 231, 61))
+        self.label_21.setStyleSheet("font: 16pt \"MS Shell Dlg 2\";")
+        self.label_21.setObjectName("label_21")
+        self.label_22 = QtWidgets.QLabel(self.frame_6)
+        self.label_22.setGeometry(QtCore.QRect(150, 350, 231, 61))
+        self.label_22.setStyleSheet("font: 16pt \"MS Shell Dlg 2\";")
+        self.label_22.setObjectName("label_22")
+        self.label_23 = QtWidgets.QLabel(self.frame_6)
+        self.label_23.setGeometry(QtCore.QRect(450, 150, 471, 71))
+        self.label_23.setStyleSheet("font: 18pt \"MS Shell Dlg 2\";")
+        self.label_23.setText("")
+        self.label_23.setObjectName("label_23")
+        self.label_24 = QtWidgets.QLabel(self.frame_6)
+        self.label_24.setGeometry(QtCore.QRect(450, 250, 471, 71))
+        self.label_24.setStyleSheet("font: 18pt \"MS Shell Dlg 2\";")
+        self.label_24.setText("")
+        self.label_24.setObjectName("label_24")
+        self.label_25 = QtWidgets.QLabel(self.frame_6)
+        self.label_25.setGeometry(QtCore.QRect(450, 360, 471, 71))
+        self.label_25.setStyleSheet("font: 18pt \"MS Shell Dlg 2\";")
+        self.label_25.setText("")
+        self.label_25.setObjectName("label_25")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 1083, 31))
@@ -266,10 +321,16 @@ class Ui_MainWindow(object):
         self.actionCar_Loan.setObjectName("actionCar_Loan")
         self.actionEducation_Loan = QtWidgets.QAction(MainWindow)
         self.actionEducation_Loan.setObjectName("actionEducation_Loan")
+        self.actionStatement = QtWidgets.QAction(MainWindow)
+        self.actionStatement.setObjectName("actionStatement")
+        self.actionHome = QtWidgets.QAction(MainWindow)
+        self.actionHome.setObjectName("actionHome")
+        self.menuLogin_Options.addAction(self.actionHome)
         self.menuLogin_Options.addAction(self.actionCreate_Account)
         self.menuLogin_Options.addAction(self.actionBalance_Enquiry)
         self.menuLogin_Options.addAction(self.actionDeposit)
         self.menuLogin_Options.addAction(self.actionFund_Transfer)
+        self.menuLogin_Options.addAction(self.actionStatement)
         self.menuAdmin.addAction(self.actionView_Customers)
         self.menuAdmin.addAction(self.actionUpdate_Customers)
         self.menuAdmin.addAction(self.actionDelete_Customer)
@@ -313,15 +374,38 @@ class Ui_MainWindow(object):
         self.pushButton_6.setText(_translate("MainWindow", "Balance Enquiry"))
         self.pushButton_7.setText(_translate("MainWindow", "Funds Transfer"))
         self.pushButton_8.setText(_translate("MainWindow", "Apply Loan"))
-        self.pushButton_st.setText(_translate("MainWindow", "View Statement"))
-        self.pushButton_dl.setText(_translate("MainWindow", "Delete Account"))
         self.label_15.setText(_translate("MainWindow", "Create Account"))
         self.label_16.setText(_translate("MainWindow", "Enter Name"))
         self.label_17.setText(_translate("MainWindow", "Enter Email ID"))
         self.label_18.setText(_translate("MainWindow", "Upload Photograph"))
         self.pushButton_9.setText(_translate("MainWindow", "Upload"))
         self.pushButton_10.setText(_translate("MainWindow", "Create Account"))
-        self.menuLogin_Options.setTitle(_translate("MainWindow", "Home"))
+        self.label_19.setText(_translate("MainWindow", "Transactions"))
+        item = self.tableWidget.verticalHeaderItem(0)
+        item.setText(_translate("MainWindow", "1"))
+        item = self.tableWidget.horizontalHeaderItem(0)
+        item.setText(_translate("MainWindow", "Date"))
+        item = self.tableWidget.horizontalHeaderItem(1)
+        item.setText(_translate("MainWindow", "Acc No"))
+        item = self.tableWidget.horizontalHeaderItem(2)
+        item.setText(_translate("MainWindow", "Amount"))
+        item = self.tableWidget.horizontalHeaderItem(3)
+        item.setText(_translate("MainWindow", "Cr / Dr"))
+        __sortingEnabled = self.tableWidget.isSortingEnabled()
+        self.tableWidget.setSortingEnabled(False)
+        item = self.tableWidget.item(0, 0)
+        item.setText(_translate("MainWindow", "22 May 2020"))
+        item = self.tableWidget.item(0, 1)
+        item.setText(_translate("MainWindow", "324234234"))
+        item = self.tableWidget.item(0, 2)
+        item.setText(_translate("MainWindow", "4500"))
+        item = self.tableWidget.item(0, 3)
+        item.setText(_translate("MainWindow", "Cr"))
+        self.tableWidget.setSortingEnabled(__sortingEnabled)
+        self.label_20.setText(_translate("MainWindow", "Name"))
+        self.label_21.setText(_translate("MainWindow", "Acc No"))
+        self.label_22.setText(_translate("MainWindow", "Total Balance"))
+        self.menuLogin_Options.setTitle(_translate("MainWindow", "User"))
         self.menuAdmin.setTitle(_translate("MainWindow", "Admin"))
         self.menuLoan_Management.setTitle(_translate("MainWindow", "Loan Management"))
         self.menuApply_for_loan.setTitle(_translate("MainWindow", "Apply for loan"))
@@ -337,14 +421,20 @@ class Ui_MainWindow(object):
         self.actionHome_Loan.setText(_translate("MainWindow", "Home Loan"))
         self.actionCar_Loan.setText(_translate("MainWindow", "Car Loan"))
         self.actionEducation_Loan.setText(_translate("MainWindow", "Education Loan"))
+        self.actionStatement.setText(_translate("MainWindow", "Statement"))
+        self.actionHome.setText(_translate("MainWindow", "Dashboard"))
+        self.pushButton_st.setText(_translate("MainWindow", "View Statement"))
+        self.pushButton_dl.setText(_translate("MainWindow", "Delete Account"))
 
-        self.frame_4.hide()
+        self.frame.hide()
         self.initEvents()
 
     def initEvents(self):
         self.pushButton.clicked.connect(self.loginPage)
         self.pushButton_2.clicked.connect(self.registerPage)
         self.pushButton_3.clicked.connect(self.loginCheck)
+
+        self.actionStatement.triggered.connect(self.showStatement)
 
     def loginPage(self):
         self.frame.show()
@@ -359,8 +449,30 @@ class Ui_MainWindow(object):
     def loginCheck(self):
         user_id = self.lineEdit.text()
         user_pwd = self.lineEdit_2.text()
-        print(user_id,user_pwd)
+        # print(user_id, user_pwd)
+        self.frame_2.show()
+        self.label_23.setText("Ram")
+        self.label_24.setText("231231232")
+        self.label_25.setText("5000")
 
+    def showStatement(self):
+        data = (('22/05/2020', '3435345353', '45453', 'Cr'),
+                ('22/05/2020', '3454346768', '453', 'Dr'),
+                ('22/05/2020', '3676423422', '15453', 'Dr'),
+                ('22/05/2020', '1234343466', '454', 'Cr'))
+        self.frame_5.show()
+        self.frame_6.hide()
+
+        try:
+            row_count = len(data)
+            self.tableWidget.setRowCount(row_count)
+            for i in range(row_count):
+                for j in range(4):
+                    item = QtWidgets.QTableWidgetItem()
+                    self.tableWidget.setItem(i, j, item)
+                    item.setText(data[i][j])
+        except BaseException as ex:
+            print(ex)
 
 
 if __name__ == "__main__":
@@ -371,4 +483,3 @@ if __name__ == "__main__":
     ui.setupUi(MainWindow)
     MainWindow.show()
     sys.exit(app.exec_())
-

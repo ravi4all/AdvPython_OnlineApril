@@ -700,6 +700,205 @@ background-color: rgb(85, 170, 255);</string>
          <string>Create Account</string>
         </property>
        </widget>
+       <widget class="QFrame" name="frame_5">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>1081</width>
+          <height>661</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLabel" name="label_19">
+         <property name="geometry">
+          <rect>
+           <x>450</x>
+           <y>10</y>
+           <width>251</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 20pt &quot;MS Shell Dlg 2&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Transactions</string>
+         </property>
+        </widget>
+        <widget class="QTableWidget" name="tableWidget">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>110</y>
+           <width>771</width>
+           <height>501</height>
+          </rect>
+         </property>
+         <row>
+          <property name="text">
+           <string>1</string>
+          </property>
+         </row>
+         <column>
+          <property name="text">
+           <string>Date</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Acc No</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Amount</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Cr / Dr</string>
+          </property>
+         </column>
+         <item row="0" column="0">
+          <property name="text">
+           <string>22 May 2020</string>
+          </property>
+         </item>
+         <item row="0" column="1">
+          <property name="text">
+           <string>324234234</string>
+          </property>
+         </item>
+         <item row="0" column="2">
+          <property name="text">
+           <string>4500</string>
+          </property>
+         </item>
+         <item row="0" column="3">
+          <property name="text">
+           <string>Cr</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QFrame" name="frame_6">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>1091</width>
+           <height>671</height>
+          </rect>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QLabel" name="label_20">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>150</y>
+            <width>231</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Name</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_21">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>250</y>
+            <width>231</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Acc No</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_22">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>350</y>
+            <width>231</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Total Balance</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_23">
+          <property name="geometry">
+           <rect>
+            <x>450</x>
+            <y>150</y>
+            <width>471</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 18pt &quot;MS Shell Dlg 2&quot;;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_24">
+          <property name="geometry">
+           <rect>
+            <x>450</x>
+            <y>250</y>
+            <width>471</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 18pt &quot;MS Shell Dlg 2&quot;;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_25">
+          <property name="geometry">
+           <rect>
+            <x>450</x>
+            <y>360</y>
+            <width>471</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 18pt &quot;MS Shell Dlg 2&quot;;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </widget>
+       </widget>
       </widget>
      </widget>
     </widget>
@@ -716,12 +915,14 @@ background-color: rgb(85, 170, 255);</string>
    </property>
    <widget class="QMenu" name="menuLogin_Options">
     <property name="title">
-     <string>Home</string>
+     <string>User</string>
     </property>
+    <addaction name="actionHome"/>
     <addaction name="actionCreate_Account"/>
     <addaction name="actionBalance_Enquiry"/>
     <addaction name="actionDeposit"/>
     <addaction name="actionFund_Transfer"/>
+    <addaction name="actionStatement"/>
    </widget>
    <widget class="QMenu" name="menuAdmin">
     <property name="title">
@@ -810,6 +1011,16 @@ background-color: rgb(85, 170, 255);</string>
   <action name="actionEducation_Loan">
    <property name="text">
     <string>Education Loan</string>
+   </property>
+  </action>
+  <action name="actionStatement">
+   <property name="text">
+    <string>Statement</string>
+   </property>
+  </action>
+  <action name="actionHome">
+   <property name="text">
+    <string>Dashboard</string>
    </property>
   </action>
  </widget>
